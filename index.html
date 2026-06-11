@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Directory</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                X
+            </div>
+
+            <h2>XYZ Company</h2>
+
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Employees</a></li>
+            <li><a href="#">Departments</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <h1>Employee Directory</h1>
+
+            <p>
+                Discover, manage and connect with employees across organization.
+            </p>
+
+        </div>
+
+    </header>
+
+    <!-- SEARCH -->
+
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search employee by name...">
+
+        </div>
+
+    </section>
+
+    <!-- EMPLOYEES -->
+
+    <section class="container">
+
+        <div class="employee-grid">
+
+            <!-- Employee 1 -->
+
+            <div class="employee-card">
+
+                <div class="profile-area">
+
+                    <div class="profile-badge avatar-purple">
+
+                        <span class="avatar-letter">S</span>
+
+                        <span class="status-dot available-dot"></span>
+
+                    </div>
+
+                </div>
+
+                <div class="employee-info">
+
+                    <div class="employee-status available">
+                        Available
+                    </div>
+
+                    <h3>Sarah Johnson</h3>
+
+                    <p class="employee-id">EMP001</p>
+
+                    <p><strong>Department:</strong> Human Resources</p>
+
+                    <p><strong>Email:</strong> sarah@xyz.com</p>
+
+                </div>
+
+            </div>
+
+            <!-- Employee 2 -->
+
+            <div class="employee-card">
+
+                <div class="profile-area">
+
+                    <div class="profile-badge avatar-blue">
+
+                        <span class="avatar-letter">M</span>
+
+                        <span class="status-dot busy-dot"></span>
+
+                    </div>
+
+                </div>
+
+                <div class="employee-info">
+
+                    <div class="employee-status busy">
+                        Busy
+                    </div>
+
+                    <h3>Michael Carter</h3>
+
+                    <p class="employee-id">EMP002</p>
+
+                    <p><strong>Department:</strong> Finance</p>
+
+                    <p><strong>Email:</strong> michael@xyz.com</p>
+
+                </div>
+
+            </div>
+
+            <!-- Employee 3 -->
+
+            <div class="employee-card">
+
+                <div class="profile-area">
+
+                    <div class="profile-badge avatar-green">
+
+                        <span class="avatar-letter">E</span>
+
+                        <span class="status-dot call-dot"></span>
+
+                    </div>
+
+                </div>
+
+                <div class="employee-info">
+
+                    <div class="employee-status call">
+                        On Call
+                    </div>
+
+                    <h3>Emma Wilson</h3>
+
+                    <p class="employee-id">EMP003</p>
+
+                    <p><strong>Department:</strong> Marketing</p>
+
+                    <p><strong>Email:</strong> emma@xyz.com</p>
+
+                </div>
+
+            </div>
+
+            <!-- Employee 4 -->
+
+            <div class="employee-card">
+
+                <div class="profile-area">
+
+                    <div class="profile-badge avatar-orange">
+
+                        <span class="avatar-letter">D</span>
+
+                        <span class="status-dot available-dot"></span>
+
+                    </div>
+
+                </div>
+
+                <div class="employee-info">
+
+                    <div class="employee-status available">
+                        Available
+                    </div>
+
+                    <h3>Daniel Brown</h3>
+
+                    <p class="employee-id">EMP004</p>
+
+                    <p><strong>Department:</strong> IT Department</p>
+
+                    <p><strong>Email:</strong> daniel@xyz.com</p>
+
+                </div>
+
+            </div>
+
+            <!-- Employee 5 -->
+
+            <div class="employee-card">
+
+                <div class="profile-area">
+
+                    <div class="profile-badge avatar-pink">
+
+                        <span class="avatar-letter">O</span>
+
+                        <span class="status-dot call-dot"></span>
+
+                    </div>
+
+                </div>
+
+                <div class="employee-info">
+
+                    <div class="employee-status call">
+                        On Call
+                    </div>
+
+                    <h3>Olivia Martin</h3>
+
+                    <p class="employee-id">EMP005</p>
+
+                    <p><strong>Department:</strong> Design Team</p>
+
+                    <p><strong>Email:</strong> olivia@xyz.com</p>
+
+                </div>
+
+            </div>
+
+            <!-- Employee 6 -->
+
+            <div class="employee-card">
+
+                <div class="profile-area">
+
+                    <div class="profile-badge avatar-teal">
+
+                        <span class="avatar-letter">J</span>
+
+                        <span class="status-dot busy-dot"></span>
+
+                    </div>
+
+                </div>
+
+                <div class="employee-info">
+
+                    <div class="employee-status busy">
+                        Busy
+                    </div>
+
+                    <h3>James Anderson</h3>
+
+                    <p class="employee-id">EMP006</p>
+
+                    <p><strong>Department:</strong> Operations</p>
+
+                    <p><strong>Email:</strong> james@xyz.com</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

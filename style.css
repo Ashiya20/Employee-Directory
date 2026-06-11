@@ -1,0 +1,293 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:#f7f9fc;
+    color:#333;
+}
+
+/* NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:white;
+    box-shadow:0 4px 15px rgba(0,0,0,.05);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-icon{
+    width:42px;
+    height:42px;
+    border-radius:12px;
+    background:linear-gradient(135deg,#A7D8FF,#DCC6FF);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#444;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:#7b61ff;
+}
+
+/* HERO */
+
+.hero{
+    min-height:260px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(135deg,#A7D8FF,#DCC6FF,#FFD6E7);
+}
+
+.hero-content{
+    padding:20px;
+}
+
+.hero h1{
+    font-size:3rem;
+    color:#1d3557;
+    margin-bottom:15px;
+}
+
+/* SEARCH */
+
+.search-section{
+    padding:40px 20px;
+}
+
+.search-box{
+    max-width:700px;
+    margin:auto;
+    position:relative;
+}
+
+.search-box i{
+    position:absolute;
+    left:20px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+.search-box input{
+    width:100%;
+    padding:16px 20px 16px 50px;
+    border:none;
+    outline:none;
+    border-radius:50px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.search-box input:focus{
+    box-shadow:0 10px 30px rgba(167,216,255,.5);
+}
+
+/* GRID */
+
+.container{
+    max-width:1300px;
+    margin:auto;
+    padding:20px;
+}
+
+.employee-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* CARD */
+
+.employee-card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.employee-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+/* PROFILE */
+
+.profile-area{
+    height:180px;
+    background:linear-gradient(135deg,#A7D8FF,#DCC6FF,#FFD6E7);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.profile-badge{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    transition:.3s;
+}
+
+.employee-card:hover .profile-badge{
+    transform:scale(1.08);
+}
+
+.avatar-letter{
+    color:white;
+    font-size:42px;
+    font-weight:700;
+}
+
+.avatar-purple{
+    background:#a78bfa;
+}
+
+.avatar-blue{
+    background:#60a5fa;
+}
+
+.avatar-green{
+    background:#34d399;
+}
+
+.avatar-orange{
+    background:#fb923c;
+}
+
+.avatar-pink{
+    background:#f472b6;
+}
+
+.avatar-teal{
+    background:#14b8a6;
+}
+
+/* STATUS DOT */
+
+.status-dot{
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    border:3px solid white;
+    position:absolute;
+    bottom:10px;
+    right:10px;
+}
+
+.available-dot{
+    background:#22c55e;
+}
+
+.busy-dot{
+    background:#ef4444;
+}
+
+.call-dot{
+    background:#3b82f6;
+}
+
+/* INFO */
+
+.employee-info{
+    padding:25px;
+}
+
+.employee-info h3{
+    margin-bottom:10px;
+}
+
+.employee-id{
+    color:#777;
+    margin-bottom:15px;
+}
+
+/* STATUS BADGE */
+
+.employee-status{
+    display:inline-block;
+    padding:7px 14px;
+    border-radius:30px;
+    font-size:.8rem;
+    font-weight:600;
+    margin-bottom:15px;
+    opacity:0;
+    transform:translateY(10px);
+    transition:.3s;
+}
+
+.employee-card:hover .employee-status{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.available{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+.busy{
+    background:#fee2e2;
+    color:#dc2626;
+}
+
+.call{
+    background:#dbeafe;
+    color:#2563eb;
+}
+
+.employee-info p{
+    margin-bottom:10px;
+    line-height:1.6;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+}
