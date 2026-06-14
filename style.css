@@ -272,7 +272,7 @@ main {
   height: 58px;
   border-radius: 50%;
   border: none;
-  background: #7b61ff;
+  background: #063e7e;
   color: white;
   font-size: 34px;
   cursor: pointer;
@@ -282,7 +282,7 @@ main {
 
 #addBtn:hover {
   transform: rotate(90deg) scale(1.1);
-  background: #5b45d8;
+  background: #42339b;;
 }
 
 /* MODAL */
